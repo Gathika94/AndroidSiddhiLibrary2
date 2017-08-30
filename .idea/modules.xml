@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidSiddhiLibrary2.iml" filepath="$PROJECT_DIR$/AndroidSiddhiLibrary2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Siddhi/Siddhi.iml" filepath="$PROJECT_DIR$/Siddhi/Siddhi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib100/lib100.iml" filepath="$PROJECT_DIR$/lib100/lib100.iml" />
+    </modules>
+  </component>
+</project>

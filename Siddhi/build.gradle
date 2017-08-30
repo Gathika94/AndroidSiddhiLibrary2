@@ -1,0 +1,40 @@
+apply plugin: 'java-library'
+apply plugin: 'me.champeau.gradle.antlr4'
+
+antlr4 {
+    extraArgs=['-package', 'org.wso2.siddhi.query.compiler']
+    output=project.file("src/main/java/org/wso2/siddhi/query/compiler")
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "org.apache.log4j.wso2:log4j:1.2.17.wso2v1"
+    testImplementation "junit:junit:4.12"
+    implementation "org.mvel:mvel2:2.2.1.Final"
+    implementation "org.antlr:antlr4-runtime:4.5.1"
+    implementation "org.wso2.orbit.com.lmax:disruptor:3.3.2.wso2v2"
+    implementation "com.google.guava:guava:19.0"
+    implementation "com.google.code.gson:gson:2.8.0"
+    implementation "org.atteo.classindex:classindex:3.4"
+    implementation "io.dropwizard.metrics:metrics-core:3.1.0"
+    implementation "org.quartz-scheduler.wso2:quartz:2.1.1.wso2v1"
+    implementation "org.slf4j:slf4j-simple:1.7.12"
+    implementation "org.osgi:org.osgi.core:6.0.0"
+    implementation "org.eclipse.osgi:org.eclipse.osgi.services:3.3.100.v20120522-1822"
+    implementation "com.jayway.jsonpath:json-path:2.2.0"
+    implementation "org.wso2.msf4j:msf4j-all:2.1.1"
+    implementation "javax.servlet:servlet-api:2.5"
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-joda:2.4.1"
+    implementation "com.zaxxer:HikariCP:2.6.3"
+    implementation "org.apache.maven:maven-core:3.3.9"
+    implementation "org.apache.maven:maven-plugin-api:3.0.5"
+    implementation "org.apache.maven.plugin-tools:maven-plugin-annotations:3.4"
+    implementation "org.freemarker:freemarker-gae:2.3.25-incubating"
+    implementation "org.apache.commons:commons-io:1.3.2"
+    implementation "org.yaml:snakeyaml:1.18"
+
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
